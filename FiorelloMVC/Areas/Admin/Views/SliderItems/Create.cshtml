@@ -1,0 +1,32 @@
+﻿@using FiorelloMVC.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+@model SliderItem
+
+    
+
+
+<form asp-area="Admin" asp-controller="SliderItems" asp-action="Create">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Image</label>
+        <input asp-for="Img" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text"></div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Title</label>
+        <input asp-for="Title" class="form-control" id="exampleInputPassword1">
+    </div>
+       <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Short Description</label>
+        <input asp-for="ShortDescription" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Price</label>
+        <input asp-for="Price" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>  
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
